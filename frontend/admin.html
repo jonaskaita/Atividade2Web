@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<script>
+if (localStorage.getItem("admin") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Poções</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<h1>Admin - Poções</h1>
+
+<div class="top-actions">
+    <button onclick="voltarLoja()">Voltar para a Loja</button>
+</div>
+
+<button onclick="logout()">Sair</button>
+
+<script>
+function logout() {
+    localStorage.removeItem("admin");
+    window.location.href = "login.html";
+}
+</script>
+
+<form id="form">
+    <input placeholder="Nome" id="nome" required>
+    <input placeholder="Descrição" id="descricao" required>
+    <input placeholder="Imagem (URL)" id="imagem" required>
+    <input placeholder="Preço" id="preco" type="number" required>
+
+    <button type="submit">Criar Poção</button>
+</form>
+
+<hr>
+
+<div id="lista"></div>
+
+<script src="admin.js"></script>
+
+<script>
+function voltarLoja() {
+    window.location.href = "index.html";
+}
+</script>
+</body>
+</html>

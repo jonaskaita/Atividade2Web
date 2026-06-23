@@ -1,0 +1,27 @@
+{
+  "name": "atividade2web",
+  "version": "1.0.0",
+  "description": "Atividade sobre elaborar um site de venda de poções com implementação de Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonaskaita/Atividade2Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/jonaskaita/Atividade2Web/issues"
+  },
+  "homepage": "https://github.com/jonaskaita/Atividade2Web#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "sequelize": "^6.37.8",
+    "sqlite3": "^6.0.1"
+  }
+}

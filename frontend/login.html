@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div style="text-align:center; margin-top:100px;">
+    <h1>Área Administrativa</h1>
+
+    <input type="password" id="senha" placeholder="Digite a senha">
+    <button onclick="logar()">Entrar</button>
+
+    <p id="erro" style="color:red;"></p>
+</div>
+
+<script>
+function logar() {
+    const senha = document.getElementById("senha").value;
+
+    const senhaCorreta = "1234"; // você pode mudar aqui
+
+    if (senha === senhaCorreta) {
+        localStorage.setItem("admin", "true");
+        window.location.href = "admin.html";
+    } else {
+        document.getElementById("erro").innerText = "Senha incorreta";
+    }
+}
+</script>
+
+</body>
+</html>
