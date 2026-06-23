@@ -12,4 +12,6 @@ Para abrir o site, você deve:
 
 3. executar: `node backend/server.js`
 
-4. voilá
+4. abrir `localhost:3000` no browser
+
+5. Voilá
