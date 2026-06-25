@@ -14,20 +14,24 @@ Antes de executar o projeto, é necessário ter instalado:
    ```bash
    git clone https://github.com/jonaskaita/Atividade2Web.git
    cd Atividade2Web
+   ```
 
 Instale as dependências do projeto:
 
 ```bash
    npm install
+```
 
 Inicie o servidor:
 ```bash
    node backend/server.js
+```
 
 Abra o navegador e acesse:
 
 ```
 http://localhost:3000
+```
 
 O frontend é servido automaticamente pelo backend, portanto não é necessário iniciar outro servidor.
 
