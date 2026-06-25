@@ -1,17 +1,34 @@
-# Atividade2Web
+## Como executar
 
-Atividade sobre elaborar um site de venda de poções com implementação de Backend
+### Pré-requisitos
 
-## Como usar o site
+Antes de executar o projeto, é necessário ter instalado:
 
-Para abrir o site, você deve:
+- Node.js
+- npm
 
-1. clonar o repositório
+### Passo a passo
 
-2. rodar `npm install`
+1. Clone o repositório:
 
-3. executar: `node backend/server.js`
+   ```bash
+   git clone https://github.com/jonaskaita/Atividade2Web.git
+   cd Atividade2Web
 
-4. abrir `localhost:3000` no browser
+Instale as dependências do projeto:
 
-5. Voilá
+npm install
+
+Inicie o servidor:
+
+node backend/server.js
+
+Abra o navegador e acesse:
+
+http://localhost:3000
+
+O frontend é servido automaticamente pelo backend, portanto não é necessário iniciar outro servidor.
+
+Observação
+
+O projeto utiliza um banco de dados SQLite em memória (:memory:). Assim, todos os dados são recriados sempre que o servidor é reiniciado.
