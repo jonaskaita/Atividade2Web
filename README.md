@@ -17,14 +17,16 @@ Antes de executar o projeto, é necessário ter instalado:
 
 Instale as dependências do projeto:
 
-npm install
+```bash
+   npm install
 
 Inicie o servidor:
-
-node backend/server.js
+```bash
+   node backend/server.js
 
 Abra o navegador e acesse:
 
+```
 http://localhost:3000
 
 O frontend é servido automaticamente pelo backend, portanto não é necessário iniciar outro servidor.
